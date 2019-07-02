@@ -1,0 +1,414 @@
+@media screen and (max-width: 1400px) { 
+  body {
+    font-family: roboto;
+  }
+
+  .post-1 {
+    background: #b71757;
+  }
+  .post-2 {
+    background: #0d7e71;
+  }
+  .post-3 {
+    background: #b1660e;
+  }
+  .post-4 {
+    background: #d12767;
+  }
+  .post-5 {
+    background: #2d95bb;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0b192f;
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: #162b4d;
+    color: white;
+    justify-content: space-between;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+    padding: 2.5vh;
+  }
+
+  header .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo p {
+    font-size: 3vw;
+    font-weight: lighter;
+    margin: 1vh 0 0 3vw;
+  }
+
+  .logo span {
+    color: #cb2866;
+  }
+
+  nav {
+    display: flex;
+    padding-top: 1vh;
+    justify-content: flex-end;
+    margin-right: 6vw;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    width: 75%;
+    margin: 30px 30px 30px 0;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    line-height: 2.5vh;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  article div {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  article div p {
+    margin: 20px 0;
+    font-size: 20px;
+   }
+
+  h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    width: 40%;
+    line-height: 3rem;
+  }
+
+  article div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  article div:hover,
+  img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+  }
+
+  a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    filter: alpha(opacity=70) #b8b8b8;
+  }
+
+  article:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-items: right;
+    align-content: flex-end;
+    position: relative;
+  }
+
+  article:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+    position: relative;
+  }
+
+  article:nth-child(even) h2 {
+    display: flex;
+    text-align: right;
+    margin: 7vh 6rem 1rem auto;
+    right: 8em;
+  }
+
+  article:nth-child(odd) h2 {
+    display: flex;
+    text-align: left;
+    margin: 7vh 6rem 1rem 1.5rem;
+  }
+
+  article:nth-child(odd).post-5 h2 {
+    display: flex;
+    text-align: left;
+    width: 60vw;
+    margin: 1vw 2vw 2vw 4vw;
+  }
+
+  article:nth-child(odd).post-5 {
+    position: relative;
+  }
+
+  article:nth-child(odd).post-5 p {
+    display: flex;
+    text-align: left;
+    width: 60vw;
+    margin: 1vw 4vw 2vw 2vw;
+  }
+
+  .top-right {
+    position: absolute;
+    color: rgba(247, 242, 242, 0.3);
+    display: block;
+    text-align: center;
+    font-size: 7vh;
+    right: 2vw;
+    top: 2vh;
+    font-weight: lighter;
+    width: 5vw;
+    line-height: 4vh;
+  }
+
+  .top-left {
+    position: absolute;
+    color: rgba(247, 242, 242, 0.3);
+    display: block;
+    text-align: center;
+    font-size: 7vh;
+    left: 2vw;
+    top: 2vh;
+    font-weight: lighter;
+    width: 5vw;
+    line-height: 4vh;
+  }
+
+  .top-right span,
+  .top-left span {
+    font-size: 3vh;
+  }
+
+  article:nth-child(odd).post-5 .top-right {
+    position: absolute;
+    color: rgba(247, 242, 242, 0.3);
+    display: block;
+    font-size: 7vh;
+    right: -30vw;
+    top: 2vh;
+    font-weight: lighter;
+    width: 4vw;
+    line-height: 4vh;
+  }
+
+  aside {
+    width: 22%;
+    height: auto;
+    margin: 30px 0;
+  }
+
+  .news {
+    background-color: #fff;
+    height: auto;
+  }
+
+  .news img {
+    width: 100%;
+  }
+
+  .news h2 {
+    font-size: 2.5vh;
+    font-weight: lighter;
+    color: #000000;
+    text-align: left;
+    padding: 1.5vw 1.5vw 0;
+    margin: 0;
+  }
+
+  .news p {
+    font-size: 2vh;
+    font-weight: lighter;
+    color: #000000;
+    text-align: left;
+    padding: 0 1.5vw 1.5vw;
+    line-height: 3vh;
+  }
+
+  footer {
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: #162b4d;
+    color: white;
+    justify-content: space-between;
+  }
+
+  footer div p {
+    margin: 0;
+  }
+
+  .sandwich div {
+    display: none; 
+    width: 35px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: #b8b8b8;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo p{
+    text-align: center;
+    margin: 10vh 0;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  .sandwich {
+    position: absolute;
+    vertical-align: middle;
+    top: 2vh;
+    left: 50%;
+  }
+
+  .sandwich div {
+    display: block;
+    width: 15vw;
+    height: 0.7vh;
+    margin: 1vh 0;
+    background-color: #b8b8b8;
+  }
+  
+  article {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  article img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  article h2 {
+    white-space: normal;
+  }
+
+  article div {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+  }
+
+  article:nth-child(even),
+  article:nth-child(odd){
+    flex-direction: column;
+    width: 100%;
+  }
+
+  article .top-right,
+  article .top-left {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .post-5 div {
+    position: relative;
+    text-align: center;
+  }
+
+  .post-5 .top-right {
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+  aside {
+    height: auto;
+    margin: 25px 0;
+  }
+
+  footer div p {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  header {
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .logo p{
+    text-align: center;
+    margin: 6vh 0;
+   }
+  
+  nav {
+    display: none;
+  }
+
+  .sandwich {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+  }
+
+  .sandwich div {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #b8b8b8;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+  }
+
+  article div,
+  aside {
+    width: 100%;
+    height: 100%;
+  }
+
+  .news h2,
+  .news p {
+    margin: 0 20px 20px;
+  }
+}
