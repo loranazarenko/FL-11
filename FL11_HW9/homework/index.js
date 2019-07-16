@@ -72,12 +72,17 @@ function canConvertToDate(varDate) {
   return false;
 }
 
-const milisec = 1000, hourDay = 24, hourMin = 60, secHour = 60;
-const allMilisec = milisec * secHour * hourMin * hourDay;
+let milisec = 1000;
+let hourDay = 24;
+let hourMin = 60;
+let secHour = 60;
+let allMilisec = milisec * secHour * hourMin * hourDay;
+
 function daysBetween(date1, date2) {
-  let diffTime = Math.abs(date2.getTime() - date1.getTime());
-  return Math.floor(diffTime / milisec);
+  let diffTime = date2.getTime() - date1.getTime();
+  return Math.round(diffTime / allMilisec);
 }
+
 const febDays = 28;
 function isLeapYear(year) {
   let d = new Date(year, 1, febDays);
@@ -96,7 +101,7 @@ function getAmountOfAdultPeople(data) {
         if (key.trim() === 'birthday') {
           let now = new Date();
           let yearsDays = daysBetween(new Date(litArr[key]), now);
-          let years = yearsDays/(isLeapYear(now.getFullYear()) ? dayYearLeap : dayYear);
+          let years = yearsDays / (isLeapYear(now.getFullYear()) ? dayYearLeap : dayYear);
           arrMan.push(years);
         }
       }
