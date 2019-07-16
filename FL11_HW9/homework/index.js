@@ -73,12 +73,12 @@
     return false;
   }
 
-  const milisec = 1000, hourDay = 24, hourMin = 60, secHour = 60;
-  let allMilisec = milisec * secHour * hourMin * hourDay;
+  const milisecon = 1000, hourDays = 24, hourMins = 60, secHours = 60;
+  let allMilisecon = milisecon * secHours * hourMins * hourDays;
 
   function daysBetween(date1, date2) {
     let diffTime = date2.getTime() - date1.getTime();
-    return Math.round(diffTime / allMilisec);
+    return Math.round(diffTime / allMilisecon);
   }
 
   const febDays = 28;
