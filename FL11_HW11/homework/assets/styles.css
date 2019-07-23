@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 0px 8px 12px 60px;
+    font-size: 18px;
+    color: lightblue;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+  }
+  
+  ul li.checked {
+    background: lightgray;
+    color: #ffffff;
+  }
+  
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 2px 2px 2px 0px;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    color: lightblue;
+    padding: 30px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    margin-bottom: 10px;
+  }
+
+  .myDiv {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: baseline;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  hr {
+    margin-top: 40px;
+    border: solid 5px lightblue;
+  }
+  
+ #inputVal{
+    display: flex;
+    margin: 0;
+    border-radius: 0;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border-width: 2px;
+    box-sizing: border-box;
+  }
+
+  .material-icons{
+    font-size: 40px;
+  }
+
+  #addBtn {
+    display: flex;
+    margin: auto;
+    color:lightgray;
+  }
+
+  #buttonClose{
+    position: absolute;
+    margin: auto;
+    color:lightblue;
+    background-color: #ffffff;
+    border-width: 0;
+    right: 0;
+    top: 0;
+  }
+
+  #buttonCheck,
+  #buttonChecked
+  {
+    position: absolute;
+    color:black;
+    background-color: #ffffff;
+    border-width: 0;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+  }
+
+  #buttonEdit {
+    font-size: 23px;
+    color: lightblue;
+    line-height: 1.6;
+    margin: 0 15px;
+}
